@@ -1,5 +1,5 @@
 import pytest
-from sample import fizz_buzz
+from sample import FizzBuzzError, fizz_buzz
 
 def test_one_to_ten():
     fizz_buzz_string = fizz_buzz(10)
@@ -23,5 +23,6 @@ def test_range_negative_10():
     assert fizz_buzz_string == None
 
 def test_range_some_string():
-    with pytest.raises(TypeError, match=r".* cannot be string .*"):
+    with pytest.raises(FizzBuzzError):
         fizz_buzz_string = fizz_buzz("Some random input string")
+    
