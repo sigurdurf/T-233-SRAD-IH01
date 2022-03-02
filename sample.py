@@ -1,5 +1,7 @@
 
 def fizz_buzz(r):
+    if r < 1:
+        return None
     result = []
     for x in range(1, r+1):
         fizz_str = ""
