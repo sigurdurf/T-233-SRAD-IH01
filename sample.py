@@ -1,5 +1,12 @@
-
+class FizzBuzzError(Exception):
+    def __init__(self, message):
+        super().__init__(message)
+    
 def fizz_buzz(r):
+    try:
+        r = int(r)
+    except ValueError:
+        raise FizzBuzzError("Input must be a number")
     if r < 1:
         return None
     result = []
