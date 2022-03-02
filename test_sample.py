@@ -21,3 +21,7 @@ def test_range_ten():
 def test_range_negative_10():
     fizz_buzz_string = fizz_buzz(-10)
     assert fizz_buzz_string == None
+
+def test_range_some_string():
+    with pytest.raises(TypeError, match=r".* cannot be string .*"):
+        fizz_buzz_string = fizz_buzz("Some random input string")
