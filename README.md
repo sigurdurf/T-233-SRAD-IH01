@@ -18,6 +18,11 @@ $ python3 -m venv env && source env/bin/activate
 ```
 **This assumes you are running commands through bash. Windows activation script ends in .bat**
 
+To add the pytest module to your system, install the requirements
+```bash
+$ pip install -r requirements.txt
+```
+
 To run the tests, simply run the following command
 ```bash
 $ pytest
