@@ -26,3 +26,7 @@ def test_range_some_string():
     with pytest.raises(FizzBuzzError):
         fizz_buzz_string = fizz_buzz("Some random input string")
     
+def test_range_with_float():
+    fizz_buzz_string = fizz_buzz(37.39283238638603)
+    assert fizz_buzz_string == "1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz fizz 22 23 fizz buzz 26 fizz 28 29 fizzbuzz 31 32 fizz 34 buzz fizz 37"
+    
