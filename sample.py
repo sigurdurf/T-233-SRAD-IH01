@@ -13,9 +13,9 @@ def fizz_buzz(r):
     for x in range(1, r+1):
         fizz_str = ""
         if x % 3 == 0:
-            fizz_str += "fizz"
+            fizz_str += "Fizz"
         if x % 5 == 0:
-            fizz_str += "buzz"
+            fizz_str += "Buzz"
         if len(fizz_str) == 0:
             fizz_str += str(x)
         result.append(fizz_str)
